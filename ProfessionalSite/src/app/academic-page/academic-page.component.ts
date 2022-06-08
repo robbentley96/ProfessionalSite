@@ -20,7 +20,9 @@ export class AcademicPageComponent implements OnInit {
       location:"University of Exeter",
       startYear:"2014",
       endYear:"2018",
-      content:"Mechanical Engineering - Upper Second Class"
+      qualifications:[
+        "Mechanical Engineering MEng - Upper Second Class (2:1)"
+      ]  
     },
     {
       id:"2",
@@ -28,7 +30,12 @@ export class AcademicPageComponent implements OnInit {
       location:"Abbeyfield School",
       startYear:"2012",
       endYear:"2014",
-      content:"A-Levels:\n"
+      qualifications:[
+        "Maths - A*",
+        "Further Maths - A",
+        "Physics - B",
+        "Religious Studies - C"
+      ]
     },
     {
       id:"3",
@@ -36,7 +43,17 @@ export class AcademicPageComponent implements OnInit {
       location:"Abbeyfield School",
       startYear:"2007",
       endYear:"2012",
-      content:"GCSEs:\n"
+      qualifications:[
+        "Maths - A*",
+        "Physics - A*",
+        "Chemistry - A",
+        "Biology - A",
+        "English Literature - A",
+        "English Language - A",
+        "German - A",
+        "Design & Technology - B",
+        "Astronomy - B"
+      ]
     }
   ]
 }

@@ -5,14 +5,28 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" [id]="'heading'+x.id">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+x.id" aria-expanded="true" aria-controls="'collapse'+x.id">
-                    {{x.location}} - {{x.title}}
+                    {{x.location}} - {{x.title}} ({{x.startDate}} - {{x.endDate}})
                   </button>
                 </h2>
                 <div [id]="'collapse'+x.id" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading'+x.id" data-bs-parent="#employmentAccordion">
                   <div class="accordion-body">
-                      <h3>{{x.location}}</h3>
-                      <p>{{x.startDate}} - {{x.endDate}}</p>
-                      <p>{{x.content}}</p>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-8">
+                            <div>
+                              <h3>{{x.location}} - {{x.title}}</h3>
+                            </div> 
+                          </div>
+                          <div class="col-4">
+                            <img src="/assets/Images/{{x.logo}}.jpg" class="rounded" alt="company-logo" style="width:50%;float:right">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <p>{{x.content}}</p> 
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
               </div>

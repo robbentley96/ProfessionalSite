@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+h1, h2, h3 {
+    color:#6e7dee;
+    font-family: 'Georgia', sans-serif;
+}
+
+p, .accordion-button, .btn, .btn:focus, .btn:hover {
+    color:#081a9d;
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    font-family: 'Arial', sans-serif;
+}

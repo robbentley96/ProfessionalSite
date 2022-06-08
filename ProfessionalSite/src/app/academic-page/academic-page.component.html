@@ -5,14 +5,15 @@
             <div class="accordion-item">
                 <h2 class="accordion-header" [id]="'heading'+x.id">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#collapse'+x.id" aria-expanded="true" aria-controls="'collapse'+x.id">
-                    {{x.location}} - {{x.title}}
+                    {{x.location}} - {{x.title}} ({{x.startYear}} - {{x.endYear}})
                   </button>
                 </h2>
                 <div [id]="'collapse'+x.id" class="accordion-collapse collapse" [attr.aria-labelledby]="'heading'+x.id" data-bs-parent="#academicAccordion">
                   <div class="accordion-body">
-                      <h3>{{x.location}}</h3>
-                      <p>{{x.startYear}} - {{x.endYear}}</p>
-                      <p>{{x.content}}</p>
+                      <h3>{{x.location}} - {{x.title}}</h3>
+                      <div *ngFor="let y of x.qualifications">
+                        <p>{{y}}</p>
+                      </div>
                   </div>
                 </div>
               </div>
